@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ileana Weibel-Gabriela Busek-DGN4BV</title>
+    <link rel="stylesheet" href="https://use.typekit.net/xbr8dgo.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+</head>
+<body>
+    <header>
+        <h1>Ether estudio</h1><!--ubicacion-->
+        <div id="etiqueta-barra" class="sr-only">Etiqueta descriptiva</div>
+
+        <nav class="navbar navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" id="custom-navbar-brand" href="#">Ether Studio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#barraether" aria-controls="barraether" aria-label="Toggle navigation">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="40" viewBox="0 0 20 40" fill="none">
+                        <path d="M9.10557 1.78886C9.4741 1.05181 10.5259 1.05181 10.8944 1.78885L19.7764 19.5528C19.9172 19.8343 19.9172 20.1657 19.7764 20.4472L10.8944 38.2111C10.5259 38.9482 9.4741 38.9482 9.10557 38.2111L0.223607 20.4472C0.0828431 20.1657 0.0828431 19.8343 0.223607 19.5528L9.10557 1.78886Z" fill="#78CAE5"/>
+                    </svg>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="barraether" aria-labelledby="etiqueta-barra">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav text-center flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#servicios">Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#proyectos">Proyectos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#nosotros">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contacto">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container" id="inicio">
+            <div class="row justify-content-center">
+                <div class="col text-center">
+            <h2 class="inicio">Inicio</h2>
+            <div class="ratio ratio-16x9">
+            <iframe width="885" height="498" src="https://www.youtube.com/embed/FeC4O7UhwWk?autoplay=1&loop=1&playlist=FeC4O7UhwWk" title="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="container">
+                    <a class="boton contenedor" href="#contacto">Contactar</a>
+            </div>
+            </div>
+            </div>
+        </section>
+
+        <section id="servicios">
+                <div class="container">
+                <div class="row align-items-start">
+                <div class="col">
+                <h2>Servicios</h2>
+                </div>
+                </div>
+            </div>
+                    <div class="container text-center">
+                    <div class="row align-items-center">
+
+                        <figure class="card col-lg-3">
+                                    <div class="cubierta"></div>
+                                <picture>
+                                    <source media="(max-width:576px)" srcset="img/mobile/servicios-arquitectura-mobile.jpg">
+                                    <source media="(max-width:991px)" srcset="img/tablet/servicios-arquitectura-tablet.jpg">
+                                    <img src="img/escritorio/servicios-arquitectura-escritorio.jpg" class="img-fluid" alt="plano de un edificio">
+                                </picture>
+                                <figcaption>
+                                    <div class="card-img-overlay">
+                                        <h3>Arquitectura</h3>
+                                        <button onclick="toggleParagraph('arquitectura-parrafo')" id="toggleButton">
+                                            <svg id="openIcon" width="37" height="26" viewBox="0 0 37 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M35.3875 24.5L21.0013 2.77684C19.8149 0.985447 17.1852 0.985449 15.9988 2.77685L1.61255 24.5" stroke="#78CAE5" stroke-width="2" stroke-linecap="round"/>
+                                            </svg>
+                                            <svg class="desplegado" id="closeIcon" width="36" height="26" viewBox="0 0 36 26" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                                                <path d="M34.775 24.5L20.3887 2.77684C19.2024 0.985447 16.5726 0.985449 15.3863 2.77685L1 24.5" stroke="#78CAE5" stroke-width="2" stroke-linecap="round"/>
+                                            </svg>
+                                        </button>
+                                        <p id="arquitectura-parrafo">Creamos diseños arquitectónicos innovadores que capturan la esencia de tu visión, equilibrando funcionalidad y estética para dar vida a espacios excepcionales.</p>
+                                    </div>
+                                </figcaption>
+                        </figure><!--arquitectura-->
+
+                        <figure class="card col-lg-3">
+                                    <div class="cubierta"></div>
+                                <picture>
+                                    <source media="(max-width:576px)" srcset="img/mobile/servicios-construccion-mobile.jpg">
+                                    <source media="(max-width:991px)" srcset="img/tablet/servicios-construccion-tablet.jpg">
+                                    <img src="img/escritorio/servicios-construccion-escritorio.jpg" class="img-fluid" alt="Edificio en construccion">
+                                </picture>
+                                <figcaption>
+                                    <div class="card-img-overlay">
+                                        <h3>Construcción</h3>
+                                        <button onclick="toggleParagraph('construccion-parrafo')" id="toggleButton1">
+                                            <svg id="openIcon1" width="37" height="26" viewBox="0 0 37 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M35.3875 24.5L21.0013 2.77684C19.8149 0.985447 17.1852 0.985449 15.9988 2.77685L1.61255 24.5" stroke="#78CAE5" stroke-width="2" stroke-linecap="round"/>
+                                            </svg>
+                                            <svg class="desplegado" id="closeIcon1" width="36" height="26" viewBox="0 0 36 26" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                                                <path d="M34.775 24.5L20.3887 2.77684C19.2024 0.985447 16.5726 0.985449 15.3863 2.77685L1 24.5" stroke="#78CAE5" stroke-width="2" stroke-linecap="round"/>
+                                            </svg>
+                                        </button>
+                                        <p id="construccion-parrafo"> Nuestro equipo de constructores altamente calificados se encarga de llevar a cabo la construcción de tus proyectos, garantizando la calidad y la ejecución precisa.</p>
+                                    </div>
+                                    </figcaption>
+                        </figure><!--construcción-->
+
+                        <figure class="card col-lg-3">
+                                    <div class="cubierta"></div>
+                                <picture>
+                                    <source media="(max-width:576px)" srcset="img/mobile/servicios-3d-mobile.jpg">
+                                    <source media="(max-width:991px)" srcset="img/tablet/servicios-3d-tablet.jpg">
+                                    <img src="img/escritorio/servicios-3d-escritorio.jpg" class="img-fluid" alt="imagen de un modelado 3D de figuras abstractas">
+                                </picture>
+                                <figcaption>
+                                    <div class="card-img-overlay">
+                                        <h3>Modelado 3D</h3>
+                                        <button onclick="toggleParagraph('modelado-parrafo')" id="toggleButton2">
+                                            <svg id="openIcon2" width="37" height="26" viewBox="0 0 37 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M35.3875 24.5L21.0013 2.77684C19.8149 0.985447 17.1852 0.985449 15.9988 2.77685L1.61255 24.5" stroke="#78CAE5" stroke-width="2" stroke-linecap="round"/>
+                                            </svg>
+                                            <svg class="desplegado" id="closeIcon2" width="36" height="26" viewBox="0 0 36 26" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                                                <path d="M34.775 24.5L20.3887 2.77684C19.2024 0.985447 16.5726 0.985449 15.3863 2.77685L1 24.5" stroke="#78CAE5" stroke-width="2" stroke-linecap="round"/>
+                                            </svg>
+                                        </button>
+                                        <p id="modelado-parrafo"> Utilizamos tecnología de vanguardia para transformar tus conceptos en representaciones 3D sorprendentemente realistas, permitiéndote visualizar tus proyectos de manera inmersiva.</p>
+                                    </div>
+                                </figcaption>
+                        </figure><!--modelado 3D-->
+        
+                        <figure class="card col-lg-3">
+                                    <div class="cubierta"></div>
+                                <picture>
+                                <source media="(max-width:576px)" srcset="img/mobile/servicios-renders-mobile.jpg">
+                                <source media="(max-width:991px)" srcset="img/tablet/servicios-renders-tablet.jpg">
+                                <img src="img/escritorio/servicios-renders-escritorio.jpg" class="img-fluid" alt="renders del patio de una casa">
+                                </picture>
+                                <figcaption>
+                                    <div class="card-img-overlay">
+                                        <h3>Renders</h3>
+                                        <button onclick="toggleParagraph('renders')" id="toggleButton3">
+                                            <svg id="openIcon3" width="37" height="26" viewBox="0 0 37 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M35.3875 24.5L21.0013 2.77684C19.8149 0.985447 17.1852 0.985449 15.9988 2.77685L1.61255 24.5" stroke="#78CAE5" stroke-width="2" stroke-linecap="round"/>
+                                            </svg>
+                                            <svg class="desplegado" id="closeIcon3" width="36" height="26" viewBox="0 0 36 26" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                                                <path d="M34.775 24.5L20.3887 2.77684C19.2024 0.985447 16.5726 0.985449 15.3863 2.77685L1 24.5" stroke="#78CAE5" stroke-width="2" stroke-linecap="round"/>
+                                            </svg>
+                                        </button>
+                                        <p id="renders">Creamos renders de alta calidad que muestran tus proyectos en su máxima expresión, ayudándote a comunicar tus ideas de manera efectiva a clientes y colaboradores.</p>
+                                    </div>
+                                    </figcaption>
+                        </figure><!--renders-->
+                    </div>
+                </div>
+        </section><!--servicios-->
+
+        <section class="container" id="proyectos">
+            <div class="row align-items-start">
+                <div class="col">
+            <h2>Proyectos</h2>
+        <div id="carrusel" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carrusel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carrusel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carrusel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carrusel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active"><!--falta picture-->
+                <picture>
+                <source media="(max-width:576px)" srcset="img/mobile/proyectos-bandes-mobile.jpg">
+                <source media="(max-width:991px)" srcset="img/tablet/proyectos-bandes-tablet.jpg">
+                <img src="img/escritorio/proyectos-bandes-escritorio.jpg" class="d-block w-100 img-fluid" alt="recepcion de una oficina">
+                </picture>
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+
+                </div>
+                <div class="carousel-item">
+                <picture>
+                <source media="(max-width:576px)" srcset="img/mobile/proyectos-cotto_pizza-mobile.jpg">
+                <source media="(max-width:991px)" srcset="img/tablet/proyectos-cotto_pizza-tablet.jpg">
+                <img src="img/escritorio/proyectos-cotto_pizza-escritorio.jpg" class="d-block w-100 img-fluid" alt="entrada de una pizzeria">
+                </picture>
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+
+                </div>
+                <div class="carousel-item">
+                <picture>
+                <source media="(max-width:576px)" srcset="img/mobile/proyectos-gimnasio_casa_banquito-mobile.jpg">
+                <source media="(max-width:991px)" srcset="img/tablet/proyectos-gimnasio_casa_banquito-tablet.jpg">
+                <img src="img/escritorio/proyectos-gimnasio_casa_banquito-escritorio.jpg" class="d-block w-100 img-fluid" alt="mini gimnasio personal de una casa">
+                </picture>
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+                </div>
+
+                <div class="carousel-item">
+                <picture>
+                <source media="(max-width:576px)" srcset="img/mobile/proyectos-mercado_hatillo-mobile.jpg">
+                <source media="(max-width:991px)" srcset="img/tablet/proyectos_hatillo_tablet.jpg">
+                <img src="img/escritorio/proyectos-mercado_hatillo-escritorio.jpg" class="d-block w-100 img-fluid" alt="fachada mercado el hatillo">
+                </picture>
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carrusel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carrusel" data-bs-slide="next"><!--poner en español netxs-->
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </div>
+    </div>
+        
+    </section><!--proyectos-->
+
+        <section class="galeriacontenedor">
+        <div class="container">
+            <div class="row justify-content-center">
+                <h2>Otros Proyectos</h2>
+                <div class="col text-center"> 
+                    <div class="galeria">
+                        <a href="img/1.jpg" 
+                        data-fancybox="galeria" data-srcset="img/mobile/galería-render1-mobile.jpg 576w, img/tablet/galeria-render1-tablet.jpg 990w, img/escritorio/galeria_1_escritorio.jpg 1300w">
+                        <img src="img/1-min.jpg" alt="salón de fiestas estilo arabe">
+                        </a>
+
+                        <a href="img/3.jpg" 
+                        data-fancybox="galeria" data-srcset="img/mobile/galería-render3-mobile.jpg 576w, img/tablet/galeria-render3-tablet.jpg 990w, img/escritorio/galeria_3_escritorio.jpg 1300w">
+                        <img src="img/3-min.jpg" alt="salón de fiestas estilo arabe">
+                        </a>
+
+                        <a href="img/4.jpg" 
+                        data-fancybox="galeria" data-srcset="img/mobile/galería-render4-mobile.jpg 576w, img/tablet/galeria-render4-tablet.jpg 990w, img/escritorio/galeria_4_escritorio.jpg 1300w">
+                        <img src="img/4-min.jpg" alt="salón de fiestas estilo arabe">
+                        </a>
+                
+                        <a href="img/5.jpg" 
+                        data-fancybox="galeria" data-srcset="img/mobile/galería-render5-mobile.jpg 576w, img/tablet/galeria-render5-tablet.jpg 990w, img/escritorio/galeria_5_escritorio.jpg 1300w">
+                        <img src="img/5-min.jpg" alt="salón de fiestas estilo arabe">
+                        </a>
+
+                        <a href="img/6.jpg" 
+                        data-fancybox="galeria" data-srcset="img/mobile/galería-render6-mobile.jpg 576w, img/tablet/galeria-render6-tablet.jpg 990w, img/escritorio/galeria_6_escritorio.jpg 1300w">
+                        <img src="img/6-min.jpg" alt="salón de fiestas estilo arabe">
+                        </a>
+
+                        <a href="img/7.jpg" 
+                        data-fancybox="galeria" data-srcset="img/mobile/galería-render7-mobile.jpg 576w, img/tablet/galeria-render7-tablet.jpg 990w, img/escritorio/galeria_7_escritorio.jpg 1300w">
+                        <img src="img/7-min.jpg" alt="frente de una casa">
+                        </a>
+
+                        <a href="img/8.jpg" 
+                        data-fancybox="galeria" data-srcset="img/mobile/galería-render8-mobile.jpg 576w, img/tablet/galeria-render8-tablet.jpg 990w, img/escritorio/galeria_8_escritorio.jpg 1300w">
+                        <img src="img/8-min.jpg" alt="terraza con sillas">
+                        </a>
+
+                        <a href="img/2.jpg" 
+                        data-fancybox="galeria" data-srcset="img/mobile/galería-render2-mobile.jpg 576w, img/tablet/galeria-render2-tablet.jpg 990w, img/escritorio/galeria_2_escritorio.jpg 1300w">
+                        <img src="img/2-min.jpg" alt="frente de una casa">
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <section id="nosotros">
+            <div class="container">
+                <div class="row">
+                        <picture class="col-lg-4">
+                            <source media="(max-width:576px)" srcset="img/mobile/nosotros-foto-henry-mobile.jpg">
+                            <source media="(max-width:991px)" srcset="img/tablet/nosotros-foto-henry-tablet.jpg">
+                            <img src="img/escritorio/nosotros-foto-henry-escritorio.jpg" alt="foto de un hombre" class="img-fluid">
+                        </picture>
+
+                    <div class="col-md-9 col-lg-8">
+                        <h2 class="titulo">Nosotros</h2>
+                        <h3>Bienvenidos a Ether: Donde la Arquitectura Crea Realidad</h3>
+                        <p>En Ether, fusionamos la visión creativa con la precisión técnica para dar vida a tus sueños arquitectónicos. Nuestro estudio fue fundado por Henry Urbina, un arquitecto con una pasión inquebrantable por el diseño y la creación de espacios únicos.
+                
+                        Con una sólida formación en diseño arquitectónico y gráfico, Henry Urbina ha cultivado una carrera rica en experiencia y logros. Su enfoque principal se centra en el dibujo planimétrico, renders y la conceptualización de diseños arquitectónicos excepcionales. Henry posee un dominio experto de una variedad de herramientas de software, incluyendo AutoCAD 2D, Revit, Sketchup, Photoshop, Lumion, y el Paquete de Office, lo que le permite materializar sus ideas de manera efectiva y precisa.
+                        En Ether, cada proyecto es una oportunidad para crear algo excepcional. Nuestra pasión por la arquitectura y el compromiso con la excelencia se reflejan en cada detalle de nuestro trabajo. Trabajamos estrechamente contigo para entender tus necesidades y transformar tu visión en una realidad impresionante.
+                
+                        Descubre cómo Ether puede hacer realidad tus proyectos arquitectónicos. ¡Contáctanos hoy y comencemos a dar vida a tus ideas!</p>
+                    </div>
+                </div>
+            </div>
+        </section><!--nosotros-->
+
+        <section  id="contacto">
+            <div class="container">
+            <h2>Contacto</h2>
+                <div class="row">
+                        <picture class="col-lg-8">
+                            <source media="(max-width:576px)" srcset="img/mobile/contacto-mesas-mobile.jpg">
+                            <source media="(max-width:991px)" srcset="img/tablet/contacto-mesas-tablet.jpg">
+                            <img src="img/escritorio/contacto-mesas-escritorio.jpg" alt="terraza con mesas" class="img-fluid">
+                        </picture>
+
+                    <div class="col-lg-4">
+                        <div class="row justify-content-center">
+                            <div class="col text-center">
+                        <ul class="list-unstyled">
+                            <li class="correocard col-md-5 col-lg-10" >
+                                    <div class="row justify-content-center">
+                                        <div class="card col text-center"><!--quitar y trabajar con columnas-->
+                                            <svg class="card-img-top" width="49" height="65" viewBox="0 0 49 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_54_999)">
+                                                <path d="M27.5242 63.375C34.0703 55.2246 49 35.4707 49 24.375C49 10.918 38.026 0 24.5 0C10.974 0 0 10.918 0 24.375C0 35.4707 14.9297 55.2246 21.4758 63.375C23.0453 65.3174 25.9547 65.3174 27.5242 63.375ZM24.5 16.25C26.6659 16.25 28.7432 17.106 30.2747 18.6298C31.8063 20.1535 32.6667 22.2201 32.6667 24.375C32.6667 26.5299 31.8063 28.5965 30.2747 30.1202C28.7432 31.644 26.6659 32.5 24.5 32.5C22.3341 32.5 20.2568 31.644 18.7253 30.1202C17.1937 28.5965 16.3333 26.5299 16.3333 24.375C16.3333 22.2201 17.1937 20.1535 18.7253 18.6298C20.2568 17.106 22.3341 16.25 24.5 16.25Z" fill="#78CAE5"/>
+                                                </g>
+                                                <defs>
+                                                <clipPath id="clip0_54_999">
+                                                <rect width="49" height="65" fill="white"/>
+                                                </clipPath>
+                                                </defs>
+                                                </svg>
+                                            <div class="card-body">
+                                                <h3>Ubicación</h3>
+                                                <p class="card-text">Caracas, Venezuela</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </li><!--ubicacion-->
+            
+                            <li class="correocard col-md-5 col-lg-10">
+                                <div class="row justify-content-center">
+                                    <div class="card col text-center">
+                                        <svg class="card-img-top" width="65" height="65" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.09375 9.02539C2.74352 9.02539 0.0253906 11.7435 0.0253906 15.0938C0.0253906 17.0027 0.922986 18.798 2.45276 19.9485L30.0777 40.6671L6.09375 9.02539ZM6.09375 9.02539H58.9062C62.2565 9.02539 64.9746 11.7435 64.9746 15.0938C64.9746 17.0027 64.077 18.798 62.5472 19.9485L34.9223 40.6671M6.09375 9.02539L34.9223 40.6671M34.9223 40.6671L34.9223 40.6672C33.484 41.7395 31.516 41.7395 30.0777 40.6672L34.9223 40.6671ZM0.0253906 49.625V23.2695L27.6098 43.9578C30.5133 46.1355 34.4867 46.1355 37.3902 43.9578L64.9746 23.2695V49.625C64.9746 54.0924 61.3424 57.7246 56.875 57.7246H8.125C3.65758 57.7246 0.0253906 54.0924 0.0253906 49.625Z" fill="#78CAE5" stroke="#78CAE5" stroke-width="0.0507812"/>
+                                            </svg>                                            
+                                        <div class="card-body">
+                                            <h3>Correo</h3>
+                                            <p class="card-text">arqhenurb@gmail.com</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><!--correo-->
+
+                            <li class="correocard col-md-5 col-lg-10">
+                                    <div class="row justify-content-center">
+                                        <div class="card col text-center">
+                                                <svg class="card-img-top" width="49" height="65" viewBox="0 0 49 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M10.2084 0C5.70399 0 2.04175 3.64355 2.04175 8.125V56.875C2.04175 61.3564 5.70399 65 10.2084 65H38.7917C43.2962 65 46.9584 61.3564 46.9584 56.875V8.125C46.9584 3.64355 43.2962 0 38.7917 0H10.2084ZM20.4167 54.8437H28.5834C29.7063 54.8437 30.6251 55.7578 30.6251 56.875C30.6251 57.9922 29.7063 58.9062 28.5834 58.9062H20.4167C19.2938 58.9062 18.3751 57.9922 18.3751 56.875C18.3751 55.7578 19.2938 54.8437 20.4167 54.8437Z" fill="#78CAE5"/>
+                                                </svg>                            
+                                            <div class="card-body">
+                                                <h3>Teléfono</h3>
+                                                <p class="card-text">11111-111111</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li><!--telefono-->
+                        </ul>
+                    </div>
+                    </div>
+                    </div>
+
+                    <form action="https://formsubmit.co/busekgabriela@gmail.com" method="POST" class="col-lg-8"><!--hacer funcional-->
+                        <div class="row">
+                            <fieldset>
+                                <div>
+                                    <!-- Campo Nombre -->
+                                    <div>
+                                        <label for="nombre" class="col-sm-2 col-form-label col-form-label-lg estilo-label">Nombre</label>
+                                        <div >
+                                            <input name="nombre" type="text" class="form-control form-control-lg estilo-input" id="nombre">
+                                        </div>
+                                    </div>
+                    
+                                    <!-- Campo Correo -->
+                                    <div>
+                                        <label for="correo" class="col-sm-2 col-form-label col-form-label-lg estilo-label">Correo</label>
+                                        <div >
+                                            <input name="correo" type="email" class="form-control form-control-lg estilo-input" id="correo">
+                                        </div>
+                                    </div>
+                    
+                                    <!-- Campo Mensaje -->
+                                    <div>
+                                        <label for="mensaje" class="col-sm-2 col-form-label col-form-label-lg estilo-label">Mensaje</label>
+                                        <div >
+                                            <textarea name="mensaje" class="form-control form-control-lg estilo-input" id="mensaje" placeholder="Envíanos tu consulta"></textarea>
+                                        </div>
+                                    </div>
+                                </div><!-- Campos -->
+                    
+                                <!-- Botón de Enviar -->
+                                <div class="botonenviar container text-center">
+                                    <div class="center align-items-start">
+                                        <input type="submit" class="btn btn-secondary estilo-boton col-md-6 col-lg-3" value="Enviar">
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section><!--contacto-->
+    </main>
+
+    <footer >
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col text-center">
+                    <a href="https://www.linkedin.com/in/henryurbina/">
+                    <svg width="82" height="65" viewBox="0 0 82 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M65 9C67.125 9 69 10.875 69 13.125V61C69 63.25 67.125 65 65 65H16.875C14.75 65 13 63.25 13 61V13.125C13 10.875 14.75 9 16.875 9H65ZM29.875 57V30.375H21.625V57H29.875ZM25.75 26.625C28.375 26.625 30.5 24.5 30.5 21.875C30.5 19.25 28.375 17 25.75 17C23 17 20.875 19.25 20.875 21.875C20.875 24.5 23 26.625 25.75 26.625ZM61 57V42.375C61 35.25 59.375 29.625 51 29.625C47 29.625 44.25 31.875 43.125 34H43V30.375H35.125V57H43.375V43.875C43.375 40.375 44 37 48.375 37C52.625 37 52.625 41 52.625 44V57H61Z" fill="#78CAE5"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/henry.urb/">
+                        <svg width="82" height="64" viewBox="0 0 82 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M41 20.9672C48.875 20.9672 55.375 27.4672 55.375 35.3422C55.375 43.3422 48.875 49.7172 41 49.7172C33 49.7172 26.625 43.3422 26.625 35.3422C26.625 27.4672 33 20.9672 41 20.9672ZM41 44.7172C46.125 44.7172 50.25 40.5922 50.25 35.3422C50.25 30.2172 46.125 26.0922 41 26.0922C35.75 26.0922 31.625 30.2172 31.625 35.3422C31.625 40.5922 35.875 44.7172 41 44.7172ZM59.25 20.4672C59.25 22.3422 57.75 23.8422 55.875 23.8422C54 23.8422 52.5 22.3422 52.5 20.4672C52.5 18.5922 54 17.0922 55.875 17.0922C57.75 17.0922 59.25 18.5922 59.25 20.4672ZM68.75 23.8422C69 28.4672 69 42.3422 68.75 46.9672C68.5 51.4672 67.5 55.3422 64.25 58.7172C61 61.9672 57 62.9672 52.5 63.2172C47.875 63.4672 34 63.4672 29.375 63.2172C24.875 62.9672 21 61.9672 17.625 58.7172C14.375 55.3422 13.375 51.4672 13.125 46.9672C12.875 42.3422 12.875 28.4672 13.125 23.8422C13.375 19.3422 14.375 15.3422 17.625 12.0922C21 8.84216 24.875 7.84216 29.375 7.59216C34 7.34216 47.875 7.34216 52.5 7.59216C57 7.84216 61 8.84216 64.25 12.0922C67.5 15.3422 68.5 19.3422 68.75 23.8422ZM62.75 51.8422C64.25 48.2172 63.875 39.4672 63.875 35.3422C63.875 31.3422 64.25 22.5922 62.75 18.8422C61.75 16.4672 59.875 14.4672 57.5 13.5922C53.75 12.0922 45 12.4672 41 12.4672C36.875 12.4672 28.125 12.0922 24.5 13.5922C22 14.5922 20.125 16.4672 19.125 18.8422C17.625 22.5922 18 31.3422 18 35.3422C18 39.4672 17.625 48.2172 19.125 51.8422C20.125 54.3422 22 56.2172 24.5 57.2172C28.125 58.7172 36.875 58.3422 41 58.3422C45 58.3422 53.75 58.7172 57.5 57.2172C59.875 56.2172 61.875 54.3422 62.75 51.8422Z" fill="#78CAE5"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.artstation.com/arthen">
+                            <svg width="65" height="57" viewBox="0 0 65 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.25 43.25H39.625L47 56H11.25V56.125C8.75 56.125 6.625 54.625 5.625 52.5L0.25 43.25ZM62.625 39.75C65 43.5 62.625 46.75 62.375 47.25L57.375 56L25.125 0H36.25C38.625 0 40.75 1.5 41.875 3.5L62.625 39.75ZM34.375 34.125H5.5L19.875 9.125L34.375 34.125Z" fill="#78CAE5"/>
+                                </svg>
+                            </a>
+                    <p class="align-items-center">Diseñado por Ileana Weibel-Gabriela Busek-Diseño Web-DGN4BV-2023</p>
+                </div>
+                </div>
+        </div>                
+    </footer>
+
+
+        <script src="JS/bootstrap.bundle.min.js"></script>
+<!--desplazamiento de texto de las tarjetas-->
+        <script> 
+            function toggleParagraph(paragraphId) {
+            var paragraph = document.getElementById(paragraphId);
+            if (paragraph.style.display === 'none' || paragraph.style.display === '') {
+                paragraph.style.display = 'block';
+            } else {
+                paragraph.style.display = 'none';
+            }
+            }
+        </script>
+
+<!--galeria-->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+
+</body>
+</html>
